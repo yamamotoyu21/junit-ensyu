@@ -40,13 +40,17 @@ class EmployeeTest {
 		InputStream input = getClass().getResourceAsStream("Employee.txt");
 		List<Employee> empList = employee.load(input);
 		
-		
-		
+		for(int i = 0; i < empList.size(); i++) {
+			empList.get(0);
+		}
 		assertAll("employee",
-				() -> assertEquals("Ichiro", employee.getFirstName()),
-				() -> assertEquals("Tanaka", employee.getLastName()),
-				() -> assertEquals("ichiro@example.com", employee.getEmail())
+				() -> assertEquals("Ichiro", empList.get(0).getFirstName()),
+				() -> assertEquals("Tanaka", empList.get(0).getLastName()),
+				() -> assertEquals("ichiro@example.com", empList.get(0).getEmail())
 		);
+		
+		
+		
 	}
 
 }
