@@ -12,6 +12,9 @@ public class Employee {
 	private String lastName;
 	private String email;
 	
+
+
+	
 	public static List<Employee> load(InputStream input) {
 		List<Employee> empList = new ArrayList<>();
 		try(BufferedReader reader = new BufferedReader(new InputStreamReader(input))) {
@@ -23,6 +26,7 @@ public class Employee {
 				emp.setLastName(items[1]);
 				emp.setEmail(items[2]);
 				empList.add(emp);
+				
 			}
 			return empList;
 		} catch (IOException e) {

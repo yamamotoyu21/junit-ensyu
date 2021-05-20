@@ -5,11 +5,13 @@ public class Range {
 	private double min;
 	private double max;
 
-	public Range(double min, double max) {
+	public Range() {
 		this.min = min;
 		this.max = max;
 	}
 	
+	
+
 	public boolean contains(double value) {
 		return min <= value && value <= max;
 	}
