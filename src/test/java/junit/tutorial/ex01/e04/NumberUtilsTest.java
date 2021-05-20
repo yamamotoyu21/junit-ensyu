@@ -27,8 +27,17 @@ class NumberUtilsTest {
 	}
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void test1() {
+		boolean actual = NumberUtils.isEven(10);
+		assertEquals(true, actual,"期待値と実際の値が異なります");
+	}
+	
+	@Test
+	void test2() {
+		boolean actual = NumberUtils.isEven(7);
+		assertEquals(false, actual,"期待値と実際の値が異なります");
+		
+		
 	}
 
 }
