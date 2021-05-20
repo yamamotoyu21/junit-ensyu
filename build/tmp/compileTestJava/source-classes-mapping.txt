@@ -1,0 +1,6 @@
+junit/tutorial/ex01/e02/CalculatorTest.java
+ junit.tutorial.ex01.e02.CalculatorTest
+junit/tutorial/ex01/e03/CounterTest.java
+ junit.tutorial.ex01.e03.CounterTest
+junit/tutorial/ex01/e01/StringUtilsTest.java
+ junit.tutorial.ex01.e01.StringUtilsTest
